@@ -48,10 +48,12 @@
       </div>
       </div>
       </nav>
-      <form action="/action_page.php" class="was-validated">
+      <br>
+      <h3>Quick Survey</h3>
+    <form>
         <div class="mb-3 mt-3">
-          <label for="uname" class="form-label">Email: </label>
-          <input type="text" class="form-control" id="Email" placeholder="name@example.com" name="Email" required>
+          <label for="uname" class="form-label">First Name: </label>
+          <input type="text" class="form-control" id="Email" placeholder="Name" name="Name" required>
           <div class="valid-feedback">Valid.</div>
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
@@ -101,14 +103,23 @@
         <label class="form-check-label" for="radio2"></label>
       </div>
       <form
-    action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
-    method="post"
-    >
-      <input name="send-to" value="jlouis@brooklynsteamcenter.org" hidden>
-      <input type="submit">
-
+      action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+      method="post"
+      >
+      <h1>Contact Us</h1>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="Email:" name="email"><br><br>
+        <input name="send-to" value="jlouis@brooklynsteamcenter.org" hidden>
+        <div class="form-outline">
+          <textarea class="form-control" id="textAreaExample1"  placeholder="Text Area:" rows="3"></textarea>
+          <label class="form-label" for="textAreaExample"></label>
+        </div>
+        <input type="submit">
+      
       </form> 
-      </body>
-      </html>
   </body>
-  <form
+  </html>
